@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nutrición y Dietética</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #ffc0cb;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 10px;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .cell {
+      background-color: #ffe4ec;
+      padding: 10px;
+      border: 2px solid #f8c6d8;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+    }
+
+    .cell:hover {
+      background-color: #fcd3e0;
+    }
+
+    .tached {
+      text-decoration: line-through;
+      opacity: 0.5;
+    }
+
+    .annual {
+      grid-row: span 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    footer {
+      text-align: right;
+      padding: 10px 20px;
+      background-color: #ffc0cb;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .column-title {
+      text-align: center;
+      font-weight: bold;
+      padding: 5px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Nutrición y Dietética</header>
+
+  <div class="grid">
+    <!-- Column titles -->
+    <div class="column-title">1</div>
+    <div class="column-title">2</div>
+    <div class="column-title">3</div>
+    <div class="column-title">4</div>
+    <div class="column-title">5</div>
+    <div class="column-title">6</div>
+    <div class="column-title">7</div>
+    <div class="column-title">8</div>
+    <div class="column-title">9</div>
+    <div class="column-title">10</div>
+
+    <!-- Example subjects: replace these with your real ones -->
+
+    <div class="cell">Química</div>
+    <div class="cell">Biología</div>
+    <div class="cell">Bioquímica</div>
+    <div class="cell">Microbiología</div>
+    <div class="cell">Fisiología</div>
+    <div class="cell">Patología</div>
+    <div class="cell">Nutrición Clínica</div>
+    <div class="cell">Salud Pública</div>
+    <div class="cell">Taller de Práctica</div>
+    <div class="cell">Internado</div>
+
+    <div class="cell">Alimentación y Cultura</div>
+    <div class="cell">Psicología</div>
+    <div class="cell">Análisis Nutricional</div>
+    <div class="cell">Evaluación Nutricional</div>
+    <div class="cell">Educación Alimentaria</div>
+    <div class="cell">Técnicas Dietéticas</div>
+    <div class="cell">Gestión en Servicios</div>
+    <div class="cell">Nutrición Pediátrica</div>
+    <div class="cell">Investigación Aplicada</div>
+    <div class="cell">Ética Profesional</div>
+
+    <!-- Example of annual subject crossing 2 semesters -->
+    <div class="cell annual" style="grid-column: 1;">Ciencias Básicas Anuales</div>
+  </div>
+
+  <footer>Camila Valdés</footer>
+
+  <script>
+    document.querySelectorAll(".cell").forEach(cell => {
+      cell.addEventListener("click", () => {
+        cell.classList.toggle("tached");
+      });
+    });
+  </script>
+</body>
+</html>
