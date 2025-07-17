@@ -52,12 +52,20 @@
       box-shadow: 2px 4px 10px rgba(0,0,0,0.05);
     }
 
-    .semestre-box:nth-child(even) {
-      background-color: #e6dbf4; /* morado suave */
+    .semestre-box:nth-child(odd) {
+      background-color: #f9b3c2; /* rosado más fuerte */
     }
 
-    .semestre-box:nth-child(odd) {
-      background-color: #ffe4ec; /* rosado pastel */
+    .semestre-box:nth-child(even) {
+      background-color: #cbb6f4; /* morado más fuerte */
+    }
+
+    .semestre-box:nth-child(odd) .semestre-title {
+      color: #b30047; /* texto rosado oscuro */
+    }
+
+    .semestre-box:nth-child(even) .semestre-title {
+      color: #4b0082; /* texto morado fuerte */
     }
 
     .semestre-title {
@@ -65,7 +73,6 @@
       text-align: center;
       font-size: 1.2em;
       margin-bottom: 10px;
-      color: #444;
     }
 
     .cell {
@@ -102,7 +109,7 @@
   <div class="container">
     <!-- Semestres -->
     <div class="semestre-box">
-      <div class="semestre-title">Semestre 1</div>
+      <div class="semestre-title">1° Semestre</div>
       <div class="cell">Química General y Orgánica</div>
       <div class="cell">Biología</div>
       <div class="cell">Matemáticas</div>
@@ -113,7 +120,7 @@
       <div class="cell">Deporte I</div>
     </div>
     <div class="semestre-box">
-      <div class="semestre-title">Semestre 2</div>
+      <div class="semestre-title">2° Semestre</div>
       <div class="cell">Anatomía e Histología</div>
       <div class="cell">Bioestadística Descriptiva</div>
       <div class="cell">Nutrición y Salud Comunitaria Familiar</div>
@@ -123,7 +130,7 @@
       <div class="cell">Idioma Extranjero II</div>
     </div>
     <div class="semestre-box">
-      <div class="semestre-title">Semestre 3</div>
+      <div class="semestre-title">3° Semestre</div>
       <div class="cell">Bioquímica Nutricional</div>
       <div class="cell">Fisiología</div>
       <div class="cell">Epidemiología</div>
@@ -134,7 +141,7 @@
       <div class="cell">Idioma Extranjero III</div>
     </div>
     <div class="semestre-box">
-      <div class="semestre-title">Semestre 4</div>
+      <div class="semestre-title">4° Semestre</div>
       <div class="cell">Fisiopatología</div>
       <div class="cell">Microbiología</div>
       <div class="cell">Gestión de la Inocuidad Alimentaria</div>
@@ -144,7 +151,7 @@
       <div class="cell">Deporte II</div>
     </div>
     <div class="semestre-box">
-      <div class="semestre-title">Semestre 5</div>
+      <div class="semestre-title">5° Semestre</div>
       <div class="cell">Evaluación Nutricional en el Ciclo Vital</div>
       <div class="cell">Nutrición en Salud y Enfermedad</div>
       <div class="cell">Nutrición Comunitaria y Educación Alimentaria</div>
@@ -155,14 +162,14 @@
       <div class="cell">Idioma Extranjero V</div>
     </div>
     <div class="semestre-box">
-      <div class="semestre-title">Semestre 6</div>
+      <div class="semestre-title">6° Semestre</div>
       <div class="cell">Metodología de la Investigación</div>
       <div class="cell">Nutrición, Fármacos y Toxicología</div>
       <div class="cell">Comprensión de Contextos Culturales</div>
       <div class="cell">Idioma Extranjero VI</div>
     </div>
     <div class="semestre-box">
-      <div class="semestre-title">Semestre 7</div>
+      <div class="semestre-title">7° Semestre</div>
       <div class="cell">Nutrición y Gerontología</div>
       <div class="cell">Soporte Nutricional Intensivo</div>
       <div class="cell">Biotecnología de Alimentos</div>
@@ -173,13 +180,13 @@
       <div class="cell">Ética y Responsabilidad Social</div>
     </div>
     <div class="semestre-box">
-      <div class="semestre-title">Semestre 8</div>
+      <div class="semestre-title">8° Semestre</div>
       <div class="cell">Nutrición, Actividad Física y Deporte</div>
       <div class="cell">Investigación en Alimentos y Nutrición</div>
       <div class="cell">Responsabilidad Social</div>
     </div>
     <div class="semestre-box">
-      <div class="semestre-title">Semestre 9</div>
+      <div class="semestre-title">9° Semestre</div>
       <div class="cell">Internado Profesional</div>
     </div>
   </div>
