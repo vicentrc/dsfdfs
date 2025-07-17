@@ -1,1 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nutrición y Dietética</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
+    header {
+      background-color: #ffc0cb;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #444;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .semestre-box {
+      background-color: #ffe4ec;
+      border: 2px solid #f8c6d8;
+      border-radius: 15px;
+      padding: 15px;
+      width: 250px;
+      box-shadow: 2px 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .semestre-title {
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    .cell {
+      background-color: white;
+      border: 1px solid #ffb6c1;
+      border-radius: 8px;
+      padding: 8px;
+      margin: 5px 0;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .cell:hover {
+      background-color: #ffe9f0;
+    }
+
+    .tached {
+      text-decoration: line-through;
+      opacity: 0.5;
+    }
+
+    footer {
+      text-align: right;
+      padding: 10px 20px;
+      background-color: #ffc0cb;
+      font-weight: bold;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>Nutrición y Dietética</header>
+  <div class="container">
+    <!-- Año 1 -->
+    <div class="semestre-box">
+      <div class="semestre-title">Año 1<br>Semestre 1</div>
+      <div class="cell">Química General y Orgánica</div>
+      <div class="cell">Biología</div>
+      <div class="cell">Matemáticas</div>
+      <div class="cell">Orientación Disciplinar</div>
+      <div class="cell">Ciencia de los Alimentos I</div>
+      <div class="cell">Comunicación Oral y Escrita I</div>
+      <div class="cell">Idioma Extranjero I</div>
+      <div class="cell">Deporte I</div>
+    </div>
+    <div class="semestre-box">
+      <div class="semestre-title">Año 1<br>Semestre 2</div>
+      <div class="cell">Anatomía e Histología</div>
+      <div class="cell">Bioestadística Descriptiva</div>
+      <div class="cell">Nutrición y Salud Comunitaria Familiar</div>
+      <div class="cell">Políticas y Programas Alimentarios</div>
+      <div class="cell">Nutrición y Psicología Conductual</div>
+      <div class="cell">Comunicación Oral y Escrita II</div>
+      <div class="cell">Idioma Extranjero II</div>
+    </div>
+
+    <!-- Año 2 -->
+    <div class="semestre-box">
+      <div class="semestre-title">Año 2<br>Semestre 3</div>
+      <div class="cell">Bioquímica Nutricional</div>
+      <div class="cell">Fisiología</div>
+      <div class="cell">Epidemiología</div>
+      <div class="cell">Bromatología y Análisis Sensorial de Alimentos</div>
+      <div class="cell">Marketing Nutricional</div>
+      <div class="cell">Integración Clínica I</div>
+      <div class="cell">Autogestión del Aprendizaje</div>
+      <div class="cell">Idioma Extranjero III</div>
+    </div>
+    <div class="semestre-box">
+      <div class="semestre-title">Año 2<br>Semestre 4</div>
+      <div class="cell">Fisiopatología</div>
+      <div class="cell">Microbiología</div>
+      <div class="cell">Gestión de la Inocuidad Alimentaria</div>
+      <div class="cell">Gestión de Programas Alimentarios</div>
+      <div class="cell">Trabajo en equipo y habilidades sociales</div>
+      <div class="cell">Idioma Extranjero IV</div>
+      <div class="cell">Deporte II</div>
+    </div>
+
+    <!-- Año 3 -->
+    <div class="semestre-box">
+      <div class="semestre-title">Año 3<br>Semestre 5</div>
+      <div class="cell">Evaluación Nutricional en el Ciclo Vital</div>
+      <div class="cell">Nutrición en Salud y Enfermedad</div>
+      <div class="cell">Nutrición Comunitaria y Educación Alimentaria</div>
+      <div class="cell">Laboratorio de Dietética</div>
+      <div class="cell">Bioestadística Inferencial</div>
+      <div class="cell">Integración Clínica II</div>
+      <div class="cell">Comprensión de Contextos Sociales</div>
+      <div class="cell">Idioma Extranjero V</div>
+    </div>
+    <div class="semestre-box">
+      <div class="semestre-title">Año 3<br>Semestre 6</div>
+      <div class="cell">Metodología de la Investigación</div>
+      <div class="cell">Nutrición, Fármacos y Toxicología</div>
+      <div class="cell">Comprensión de Contextos Culturales</div>
+      <div class="cell">Idioma Extranjero VI</div>
+    </div>
+
+    <!-- Año 4 -->
+    <div class="semestre-box">
+      <div class="semestre-title">Año 4<br>Semestre 7</div>
+      <div class="cell">Nutrición y Gerontología</div>
+      <div class="cell">Soporte Nutricional Intensivo</div>
+      <div class="cell">Biotecnología de Alimentos</div>
+      <div class="cell">Gastronomía Terapéutica y Culinaria Experimental</div>
+      <div class="cell">Proyectos de Investigación en Alimentos y Nutrición</div>
+      <div class="cell">Gestión y Auditoría de Servicios de Alimentación</div>
+      <div class="cell">Integración Clínica III</div>
+      <div class="cell">Ética y Responsabilidad Social</div>
+    </div>
+    <div class="semestre-box">
+      <div class="semestre-title">Año 4<br>Semestre 8</div>
+      <div class="cell">Nutrición, Actividad Física y Deporte</div>
+      <div class="cell">Investigación en Alimentos y Nutrición</div>
+      <div class="cell">Responsabilidad Social</div>
+    </div>
+
+    <!-- Año 5 -->
+    <div class="semestre-box">
+      <div class="semestre-title">Año 5<br>Semestre 9</div>
+      <div class="cell">Internado Profesional</div>
+    </div>
+  </div>
+
+  <footer>Camila Valdés</footer>
+
+  <script>
+    document.querySelectorAll(".cell").forEach(cell => {
+      cell.addEventListener("click", () => {
+        cell.classList.toggle("tached");
+      });
+    });
+  </script>
+</body>
+</html>
